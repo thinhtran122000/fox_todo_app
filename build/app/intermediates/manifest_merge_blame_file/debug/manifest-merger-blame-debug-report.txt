@@ -15,307 +15,109 @@
 15    <uses-permission android:name="android.permission.INTERNET" />
 15-->C:\Users\Tran Duy Thinh\StudioProjects\todo_app\android\app\src\debug\AndroidManifest.xml:7:5-66
 15-->C:\Users\Tran Duy Thinh\StudioProjects\todo_app\android\app\src\debug\AndroidManifest.xml:7:22-64
-16    <uses-permission android:name="android.permission.WAKE_LOCK" />
-16-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-68
-16-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-65
-17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
-17-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-79
-17-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-76
-18    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-18-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-77
-18-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:22-74
-19    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-19-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-81
-19-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-78
-20    <uses-permission android:name="android.permission.VIBRATE" />
-20-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-66
-20-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-63
-21    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
-21-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-81
-21-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-78
-22    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-22-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:12:5-79
-22-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:12:22-76
-23    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-23-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\2c8fd9b068f47c2305add24377b6833a\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:26:5-82
-23-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\2c8fd9b068f47c2305add24377b6833a\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:26:22-79
-24
-25    <application
-26        android:name="android.app.Application"
-27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-27-->[androidx.core:core:1.6.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\b11c0e2c212c747cb4bcf29314469768\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
-28        android:debuggable="true"
-29        android:icon="@mipmap/ic_launcher"
-30        android:label="todo_app" >
-31        <activity
-32            android:name="com.example.todo_app.MainActivity"
-33            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-34            android:exported="true"
-35            android:hardwareAccelerated="true"
-36            android:launchMode="singleTop"
-37            android:theme="@style/LaunchTheme"
-38            android:windowSoftInputMode="adjustResize" >
-39
-40            <!--
-41                 Specifies an Android theme to apply to this Activity as soon as
-42                 the Android process has started. This theme is visible to the user
-43                 while the Flutter UI initializes. After that, this theme continues
-44                 to determine the Window background behind the Flutter UI.
-45            -->
-46            <meta-data
-47                android:name="io.flutter.embedding.android.NormalTheme"
-48                android:resource="@style/NormalTheme" />
+16    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+16-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-81
+16-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-78
+17    <uses-permission android:name="android.permission.VIBRATE" />
+17-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-66
+17-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-63
+18    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+18-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-81
+18-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-78
+19    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+19-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:12:5-79
+19-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:12:22-76
+20    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+20-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-77
+20-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:13:22-74
+21
+22    <application
+23        android:name="android.app.Application"
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.6.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\b11c0e2c212c747cb4bcf29314469768\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+25        android:debuggable="true"
+26        android:icon="@mipmap/ic_launcher"
+27        android:label="todo_app" >
+28        <activity
+29            android:name="com.example.todo_app.MainActivity"
+30            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+31            android:exported="true"
+32            android:hardwareAccelerated="true"
+33            android:launchMode="singleTop"
+34            android:theme="@style/LaunchTheme"
+35            android:windowSoftInputMode="adjustResize" >
+36
+37            <!--
+38                 Specifies an Android theme to apply to this Activity as soon as
+39                 the Android process has started. This theme is visible to the user
+40                 while the Flutter UI initializes. After that, this theme continues
+41                 to determine the Window background behind the Flutter UI.
+42            -->
+43            <meta-data
+44                android:name="io.flutter.embedding.android.NormalTheme"
+45                android:resource="@style/NormalTheme" />
+46
+47            <intent-filter>
+48                <action android:name="android.intent.action.MAIN" />
 49
-50            <intent-filter>
-51                <action android:name="android.intent.action.MAIN" />
-52
-53                <category android:name="android.intent.category.LAUNCHER" />
-54            </intent-filter>
-55        </activity>
-56        <!--
-57             Don't delete the meta-data below.
-58             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-59        -->
-60        <meta-data
-61            android:name="flutterEmbedding"
-62            android:value="2" />
-63
-64        <service
-64-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-19:72
-65            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
-65-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-107
-66            android:exported="false"
-66-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
-67            android:permission="android.permission.BIND_JOB_SERVICE" />
-67-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-69
-68        <service
-68-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-26:19
-69            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
-69-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-97
-70            android:exported="false" >
-70-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-37
-71            <intent-filter>
-71-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
-72                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-72-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
-72-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
-73            </intent-filter>
-74        </service>
-75
-76        <receiver
-76-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-35:20
-77            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
-77-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-98
-78            android:exported="true"
-78-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-36
-79            android:permission="com.google.android.c2dm.permission.SEND" >
-79-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-73
-80            <intent-filter>
-80-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
-81                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-81-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
-81-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
-82            </intent-filter>
-83        </receiver>
-84
-85        <service
-85-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:9-41:19
-86            android:name="com.google.firebase.components.ComponentDiscoveryService"
-86-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:18-89
-87            android:directBootAware="true"
-87-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\ef8423601b72496d12bca9ac87595f67\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:34:13-43
-88            android:exported="false" >
-88-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\2c8fd9b068f47c2305add24377b6833a\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:31:13-37
-89            <meta-data
-89-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-40:85
-90                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
-90-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:39:17-128
-91                android:value="com.google.firebase.components.ComponentRegistrar" />
-91-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:40:17-82
-92            <meta-data
-92-->[:firebase_core] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
-93                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-93-->[:firebase_core] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
-94                android:value="com.google.firebase.components.ComponentRegistrar" />
-94-->[:firebase_core] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
-95            <meta-data
-95-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\2c8fd9b068f47c2305add24377b6833a\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
-96                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-96-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\2c8fd9b068f47c2305add24377b6833a\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
-97                android:value="com.google.firebase.components.ComponentRegistrar" />
-97-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\2c8fd9b068f47c2305add24377b6833a\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
-98            <meta-data
-98-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\569774cee7cd719185752e1c4ec8676a\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:55:13-57:85
-99                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-99-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\569774cee7cd719185752e1c4ec8676a\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:56:17-119
-100                android:value="com.google.firebase.components.ComponentRegistrar" />
-100-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\569774cee7cd719185752e1c4ec8676a\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:57:17-82
-101            <meta-data
-101-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\aaac5498cd61c53403dde464793af6fe\transformed\jetified-firebase-installations-17.1.0\AndroidManifest.xml:17:13-19:85
-102                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-102-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\aaac5498cd61c53403dde464793af6fe\transformed\jetified-firebase-installations-17.1.0\AndroidManifest.xml:18:17-127
-103                android:value="com.google.firebase.components.ComponentRegistrar" />
-103-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\aaac5498cd61c53403dde464793af6fe\transformed\jetified-firebase-installations-17.1.0\AndroidManifest.xml:19:17-82
-104            <meta-data
-104-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\6d3d61abd70335c3b3635bb7c10c06d9\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
-105                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-105-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\6d3d61abd70335c3b3635bb7c10c06d9\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
-106                android:value="com.google.firebase.components.ComponentRegistrar" />
-106-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\6d3d61abd70335c3b3635bb7c10c06d9\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
-107        </service>
-108
-109        <provider
-109-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:9-47:38
-110            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
-110-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-102
-111            android:authorities="com.example.todo_app.flutterfirebasemessaginginitprovider"
-111-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-88
-112            android:exported="false"
-112-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-37
-113            android:initOrder="99" />
-113-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-35
-114
-115        <receiver
-115-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-18:40
-116            android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver"
-116-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-91
-117            android:exported="false" />
-117-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
-118        <receiver
-118-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:19:9-21:40
-119            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
-119-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-97
-120            android:exported="false" />
-120-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-37
-121        <receiver
-121-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:22:9-31:20
-122            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
-122-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-101
-123            android:exported="false" >
-123-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-37
-124            <intent-filter>
-124-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:25:13-30:29
-125                <action android:name="android.intent.action.BOOT_COMPLETED" />
-125-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:17-79
-125-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:25-76
-126                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
-126-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:27:17-84
-126-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:27:25-81
-127                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-127-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:28:17-82
-127-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:28:25-79
-128                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
-128-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:17-82
-128-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:25-79
-129            </intent-filter>
-130        </receiver>
-131
-132        <uses-library
-132-->[androidx.window:window:1.0.0-beta04] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\e1f53c96aa78f7b42431169b7cd59214\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
-133            android:name="androidx.window.extensions"
-133-->[androidx.window:window:1.0.0-beta04] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\e1f53c96aa78f7b42431169b7cd59214\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
-134            android:required="false" />
-134-->[androidx.window:window:1.0.0-beta04] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\e1f53c96aa78f7b42431169b7cd59214\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
-135        <uses-library
-135-->[androidx.window:window:1.0.0-beta04] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\e1f53c96aa78f7b42431169b7cd59214\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
-136            android:name="androidx.window.sidecar"
-136-->[androidx.window:window:1.0.0-beta04] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\e1f53c96aa78f7b42431169b7cd59214\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
-137            android:required="false" />
-137-->[androidx.window:window:1.0.0-beta04] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\e1f53c96aa78f7b42431169b7cd59214\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
-138
-139        <receiver
-139-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\569774cee7cd719185752e1c4ec8676a\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:31:9-38:20
-140            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-140-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\569774cee7cd719185752e1c4ec8676a\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:32:13-78
-141            android:exported="true"
-141-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\569774cee7cd719185752e1c4ec8676a\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:33:13-36
-142            android:permission="com.google.android.c2dm.permission.SEND" >
-142-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\569774cee7cd719185752e1c4ec8676a\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:34:13-73
-143            <intent-filter>
-143-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
-144                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-144-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
-144-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
-145            </intent-filter>
-146        </receiver>
-147        <!--
-148             FirebaseMessagingService performs security checks at runtime,
-149             but set to not exported to explicitly avoid allowing another app to call it.
-150        -->
-151        <service
-151-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\569774cee7cd719185752e1c4ec8676a\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:44:9-51:19
-152            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-152-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\569774cee7cd719185752e1c4ec8676a\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:45:13-82
-153            android:directBootAware="true"
-153-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\569774cee7cd719185752e1c4ec8676a\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:46:13-43
-154            android:exported="false" >
-154-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\569774cee7cd719185752e1c4ec8676a\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:47:13-37
-155            <intent-filter android:priority="-500" >
-155-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
-156                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-156-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
-156-->[:firebase_messaging] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
-157            </intent-filter>
-158        </service>
-159
-160        <provider
-160-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\ef8423601b72496d12bca9ac87595f67\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
-161            android:name="com.google.firebase.provider.FirebaseInitProvider"
-161-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\ef8423601b72496d12bca9ac87595f67\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:26:13-77
-162            android:authorities="com.example.todo_app.firebaseinitprovider"
-162-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\ef8423601b72496d12bca9ac87595f67\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:27:13-72
-163            android:directBootAware="true"
-163-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\ef8423601b72496d12bca9ac87595f67\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:28:13-43
-164            android:exported="false"
-164-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\ef8423601b72496d12bca9ac87595f67\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:29:13-37
-165            android:initOrder="100" />
-165-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\ef8423601b72496d12bca9ac87595f67\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:30:13-36
-166
-167        <activity
-167-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\1a2cb69c9228e95e429c828957f3a3b6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-168            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-168-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\1a2cb69c9228e95e429c828957f3a3b6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-169            android:exported="false"
-169-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\1a2cb69c9228e95e429c828957f3a3b6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-170            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-170-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\1a2cb69c9228e95e429c828957f3a3b6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-171
-172        <meta-data
-172-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\83770efba2c122ac4d7bf3f6e3fc9396\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
-173            android:name="com.google.android.gms.version"
-173-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\83770efba2c122ac4d7bf3f6e3fc9396\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
-174            android:value="@integer/google_play_services_version" />
-174-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\83770efba2c122ac4d7bf3f6e3fc9396\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
-175
-176        <service
-176-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\61fd35e3738ef55dd6374ee6a68cae63\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
-177            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-177-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\61fd35e3738ef55dd6374ee6a68cae63\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
-178            android:exported="false" >
-178-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\61fd35e3738ef55dd6374ee6a68cae63\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
-179            <meta-data
-179-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\61fd35e3738ef55dd6374ee6a68cae63\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
-180                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-180-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\61fd35e3738ef55dd6374ee6a68cae63\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
-181                android:value="cct" />
-181-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\61fd35e3738ef55dd6374ee6a68cae63\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
-182        </service>
-183        <service
-183-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\978a2af69b997e29759906459292b13f\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
-184            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-184-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\978a2af69b997e29759906459292b13f\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
-185            android:exported="false"
-185-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\978a2af69b997e29759906459292b13f\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
-186            android:permission="android.permission.BIND_JOB_SERVICE" >
-186-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\978a2af69b997e29759906459292b13f\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
-187        </service>
-188
-189        <receiver
-189-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\978a2af69b997e29759906459292b13f\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
-190            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-190-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\978a2af69b997e29759906459292b13f\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
-191            android:exported="false" />
-191-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\978a2af69b997e29759906459292b13f\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
-192    </application>
-193
-194</manifest>
+50                <category android:name="android.intent.category.LAUNCHER" />
+51            </intent-filter>
+52        </activity>
+53        <!--
+54             Don't delete the meta-data below.
+55             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+56        -->
+57        <meta-data
+58            android:name="flutterEmbedding"
+59            android:value="2" />
+60
+61        <receiver
+61-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-18:40
+62            android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver"
+62-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-91
+63            android:exported="false" />
+63-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
+64        <receiver
+64-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:19:9-21:40
+65            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+65-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-97
+66            android:exported="false" />
+66-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-37
+67        <receiver
+67-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:22:9-31:20
+68            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+68-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-101
+69            android:exported="false" >
+69-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-37
+70            <intent-filter>
+70-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:25:13-30:29
+71                <action android:name="android.intent.action.BOOT_COMPLETED" />
+71-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:17-79
+71-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:25-76
+72                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+72-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:27:17-84
+72-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:27:25-81
+73                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+73-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:28:17-82
+73-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:28:25-79
+74                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+74-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:17-82
+74-->[:flutter_local_notifications] C:\Users\Tran Duy Thinh\StudioProjects\todo_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:25-79
+75            </intent-filter>
+76        </receiver>
+77
+78        <uses-library
+78-->[androidx.window:window:1.0.0-beta04] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\e1f53c96aa78f7b42431169b7cd59214\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+79            android:name="androidx.window.extensions"
+79-->[androidx.window:window:1.0.0-beta04] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\e1f53c96aa78f7b42431169b7cd59214\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+80            android:required="false" />
+80-->[androidx.window:window:1.0.0-beta04] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\e1f53c96aa78f7b42431169b7cd59214\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+81        <uses-library
+81-->[androidx.window:window:1.0.0-beta04] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\e1f53c96aa78f7b42431169b7cd59214\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+82            android:name="androidx.window.sidecar"
+82-->[androidx.window:window:1.0.0-beta04] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\e1f53c96aa78f7b42431169b7cd59214\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+83            android:required="false" />
+83-->[androidx.window:window:1.0.0-beta04] C:\Users\Tran Duy Thinh\.gradle\caches\transforms-3\e1f53c96aa78f7b42431169b7cd59214\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+84    </application>
+85
+86</manifest>

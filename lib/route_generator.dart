@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/models/note.dart';
-import 'package:todo_app/pages/new_note_page/view/new_note_page.dart';
+import 'package:todo_app/pages/details_page/view/details_page.dart';
 import 'package:todo_app/pages/home_page/view/home_page.dart';
+import 'package:todo_app/pages/new_note_page/view/new_note_page.dart';
+
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     final args = settings.arguments;
@@ -11,19 +13,19 @@ class RouteGenerator {
           builder: (context) => const HomePage(),
         );
 
-      case '/viewPage':
+      case '/detailsPage':
         if (args is Note) {
-          // return MaterialPageRoute(
-          //   builder: (context) => ViewPage(
-          //     note: args,
-          //   ),
-          // );
+          return MaterialPageRoute(
+            builder: (context) => ViewPage(
+              note: args,
+            ),
+          );
         }
         return errorRoute();
       case '/addNotePage':
-      return MaterialPageRoute(
-        builder: (context) => const AddNotePage(),
-      );
+        return MaterialPageRoute(
+          builder: (context) => const AddNotePage(),
+        );
       default:
         return errorRoute();
     }

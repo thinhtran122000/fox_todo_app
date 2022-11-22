@@ -1,22 +1,22 @@
-import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:uuid/uuid.dart';
 // import 'package:uuid/uuid.dart';
 
-class Note extends Equatable {
-  final String id = const Uuid().v1();
+class Note {
+  String id = const Uuid().v1();
   final Color color;
   final String titleNote;
   final String dateTime;
   final String detailsNote;
-  Note({required this.titleNote, required this.detailsNote, required this.color, required this.dateTime});
+  Note(
+      {required this.titleNote,
+      required this.detailsNote,
+      required this.color,
+      required this.dateTime});
   @override
   String toString() {
     return '$id $titleNote $detailsNote $dateTime $color';
   }
-
-  @override
-  List<Object?> get props => [id, titleNote, dateTime, detailsNote, color];
 
   Note copyWith({
     String? titleNote,

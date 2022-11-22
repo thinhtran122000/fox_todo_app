@@ -8,28 +8,17 @@ class UpdateListNoteEvent extends NoteEvent {
   UpdateListNoteEvent({required this.listNote, required this.listSearch});
 }
 
-// class SearchNote extends NoteEvent {}
+class GlobalAddNote extends NoteEvent {
+  final Note note;
+  GlobalAddNote({required this.note});
+}
 
-// class AddNote extends NoteEvent {
-//   final Note note;
-//   const AddNote({required this.note});
+class GlobalDeleteNote extends NoteEvent {
+  final Note note;
+  GlobalDeleteNote({required this.note});
+}
 
-//   @override
-//   List<Object> get props => [note];
-// }
-
-// class UpdateNote extends NoteEvent {
-//   final Note note;
-//   const UpdateNote({required this.note});
-//   @override
-//   List<Object> get props => [note];
-// }
-
-// class DeleteNote extends NoteEvent {
-//   final Note note;
-//   const DeleteNote({required this.note});
-//   @override
-//   List<Object> get props => [note];
-// }
-
-// class SearchNote extends NoteEvent {}
+class GlobalUpdateNote extends NoteEvent{
+  final Note note;
+  GlobalUpdateNote({required this.note});
+}

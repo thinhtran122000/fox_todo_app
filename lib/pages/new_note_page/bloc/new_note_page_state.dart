@@ -7,8 +7,8 @@ abstract class NewNotePageState {
 class NewNotePageInitial extends NewNotePageState {}
 
 class NewNotePageSuccess extends NewNotePageState {
-  final List<Note> listNote;
-  NewNotePageSuccess({required this.listNote});
+  final Note note;
+  NewNotePageSuccess({required this.note});
 }
 
 class NewNotePageError extends NewNotePageState {

@@ -1,45 +1,57 @@
 import 'dart:async';
 import 'dart:developer';
-
 import 'package:bloc/bloc.dart';
-import 'package:flutter/material.dart';
-
 import '../models/note.dart';
-
 part 'note_event.dart';
 part 'note_state.dart';
 
 class NoteBloc extends Bloc<NoteEvent, NoteState> {
-  TextEditingController textEditingControllerSearchNote = TextEditingController();
-  NoteBloc()
-      : super(const NoteInitial(
-          listNote: [],
-          listSearch: [],
-        )) {
+  NoteBloc() : super(const NoteInitial(listNote: [], listSearch: [])) {
     on<UpdateListNoteEvent>(_showNote);
+    on<GlobalAddNote>(_onAddNewNote);
+    on<GlobalDeleteNote>(_onDeleteNote);
+    on<GlobalUpdateNote>(_onUpdateNote);
   }
 
   FutureOr<void> _showNote(UpdateListNoteEvent event, Emitter<NoteState> emit) {
-    emit(NoteInitial(listNote: event.listNote, listSearch: event.listSearch));
+    emit(NoteInitial(
+      listNote: event.listNote,
+      listSearch: event.listSearch,
+    ));
+  }
+
+  FutureOr<void> _onAddNewNote(GlobalAddNote event, Emitter<NoteState> emit) {
+    var newList = [...state.listNote];
+    newList.add(event.note);
+    emit(NoteInitial(listNote: newList, listSearch: []));
+  }
+
+  FutureOr<void> _onDeleteNote(GlobalDeleteNote event, Emitter<NoteState> emit) {
+    var newList = [...state.listNote];
+    int index = state.listNote.indexWhere((element) => element.id == event.note.id);
+    if (index >= 0) {
+      newList.removeAt(index);
+      emit(NoteInitial(listNote: newList, listSearch: []));
+    }
   }
 
   @override
   void onEvent(NoteEvent event) {
-    log('onEvent-${event.runtimeType}');
+    log('onEventGlobalBloc-${event.runtimeType}');
     super.onEvent(event);
+  }
+
+  FutureOr<void> _onUpdateNote(GlobalUpdateNote event, Emitter<NoteState> emit) {
+    var newList = [...state.listNote];
+    var index = state.listNote.indexWhere((element) => element.id == event.note.id);
+    if (index >= 0) {
+      newList[index] = event.note;
+      emit(NoteInitial(listNote: newList, listSearch: []));
+    }
   }
 }
 
 
-
-
-  // FutureOr<void> _showNote(ShowNotes event, Emitter<NoteState> emit) {
-  //   var currentState = state;
-  //   if (currentState is LoadingNotes) {
-  //     List<Note> newListNote = event.notes;
-  //     emit(SuccessLoadedNotes(notes: newListNote));
-  //   }
-  // }
 
   // FutureOr<void> _addNote(AddNote event, Emitter<NoteState> emit) {
   //   var currentState = state;

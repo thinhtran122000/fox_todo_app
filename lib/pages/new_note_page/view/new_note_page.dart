@@ -4,6 +4,7 @@ import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:todo_app/bloc/note_bloc.dart';
 import 'package:todo_app/pages/new_note_page/bloc/new_note_page_bloc.dart';
 
+
 class AddNotePage extends StatefulWidget {
   const AddNotePage({super.key});
 
@@ -16,15 +17,18 @@ class _AddNotePageState extends State<AddNotePage> {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => NewNotePageBloc()..add(AddNoteEvent()),
+      create: (context) {
+        return NewNotePageBloc();
+      },
       child: BlocBuilder<NoteBloc, NoteState>(
         builder: (context, state) {
-          var bloc = BlocProvider.of<NoteBloc>(context);
           return BlocListener<NewNotePageBloc, NewNotePageState>(
             listener: (context, state) {
               if (state is NewNotePageSuccess) {
                 BlocProvider.of<NoteBloc>(context).add(
-                  UpdateListNoteEvent(listNote: state.listNote, listSearch: bloc.state.listSearch),
+                  GlobalAddNote(
+                    note: state.note,
+                  ),
                 );
               }
             },
@@ -37,11 +41,8 @@ class _AddNotePageState extends State<AddNotePage> {
                   actions: [
                     IconButton(
                       onPressed: () {
-                        // if (state is NewNotePageSuccess) {
                         context.read<NewNotePageBloc>().add(AddNoteEvent());
-                        // log('sss${bloc.state.listNote}');
                         Navigator.of(context).popUntil((route) => route.isFirst);
-                        // }
                       },
                       icon: const SizedBox(
                         // width:0,
@@ -236,7 +237,7 @@ class _AddNotePageState extends State<AddNotePage> {
                                     },
                                   );
                                 } catch (e) {
-                                  // debugPri(e.toString());
+                                  debugPrint(e.toString());
                                 }
                               },
                             ),

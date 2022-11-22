@@ -31,18 +31,21 @@ class HomePageBloc extends Bloc<HomePageEvent, HomePageState> {
         var listNote = (state as HomePageSucess).listNote;
         listResult = listNote
             .where(
-              (note) => note.titleNote.toLowerCase().contains(searchController.text.trim().toLowerCase()),
+              (note) =>
+                  note.titleNote.toLowerCase().contains(searchController.text.trim().toLowerCase()),
             )
             .toList();
+        // debugPrint('sss$listResult');
         emit(HomePageSucess(listNote: (state as HomePageSucess).listNote, listSearch: listResult));
       }
     } catch (e) {
       emit(HomePageError(errorMessage: e.toString()));
     }
   }
-   @override
+
+  @override
   void onEvent(HomePageEvent event) {
-    log('onEvent-${event.runtimeType}');
+    log('on-EventLocalBlocHome${event.runtimeType}');
     super.onEvent(event);
   }
 }
